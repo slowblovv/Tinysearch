@@ -1,0 +1,18 @@
+# TinySearch configuration. Copy to `tinysearch.conf` in the working
+# directory to override defaults (see config.cpp for the full key list).
+# Lines starting with # are comments; unknown keys are ignored.
+
+bm25.k1 = 1.2
+bm25.b = 0.75
+default_ranker = bm25          # bm25 | tfidf
+
+default_top_k = 10
+max_top_k = 100
+
+cache_capacity = 1000
+snippet_context_chars = 120
+
+index_path = ./data/index.dat
+
+host = 127.0.0.1
+port = 8080
